@@ -1,16 +1,15 @@
-import './header.scss';
-
 import { SvgIcons } from '../common/svgIcons/SvgIcons';
+import { Container } from '../container/Container';
 
 export const Header = () => {
   return (
-    <header className='header header-pd'>
-      <div className='container'>
-        <div className='header--wrapper'>
-          <SvgIcons icon='logo' className='header--logo' />
-          <h1 className='header--title'>Blogger Platform</h1>
+    <header className='w-auto bg-slate-100 py-3'>
+      <Container>
+        <div className='flex items-center gap-x-1.5'>
+          <SvgIcons icon='logo' className='w-9' />
+          <h1 className='text-center text-xl'>Blogger Platform</h1>
         </div>
-      </div>
+      </Container>
     </header>
   );
 };

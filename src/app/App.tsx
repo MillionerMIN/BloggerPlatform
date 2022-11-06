@@ -1,12 +1,15 @@
-import { BrowserRouter } from 'react-router-dom';
-
+import { Layout } from '../components/common/svgIcons/layout/Layout';
 import { Header } from '../components/header/Header';
+import { Router } from '../components/router/Router';
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
-    </BrowserRouter>
+      <Layout>
+        <Router />
+      </Layout>
+    </>
   );
 }
 
