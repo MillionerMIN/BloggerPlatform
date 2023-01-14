@@ -1,4 +1,4 @@
-import { Layout } from '../components/common/svgIcons/layout/Layout';
+import { Layout } from '../components/common/layout/Layout';
 import { Header } from '../components/header/Header';
 import { Router } from '../components/router/Router';
 
