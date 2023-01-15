@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { AppBar } from '../appBar/AppBar';
 import { Blogs } from '../pages/blogs/Blogs';
-import { Posts } from '../pages/Posts/Posts';
+import { Posts } from '../pages/posts/Posts';
 
 export const Router = () => {
   return (
@@ -11,7 +11,7 @@ export const Router = () => {
       <div className='w-1/5 bg-gray-200 py-4'>
         <AppBar />
       </div>
-      <div className='w-4/5 px-2 py-4'>
+      <div className='w-4/5 p-4'>
         <Suspense fallback={<div>...Loading</div>}>
           <Routes>
             <Route path='/' element={<Blogs />} />
