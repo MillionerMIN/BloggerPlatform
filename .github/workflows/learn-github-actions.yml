@@ -14,12 +14,12 @@ jobs:
         with:
           node-version: '${{  matrix.node-version }}'
       - name: install modules
-        run: yarn install
+        run: npm install
       - name: build project
-        run: yarn run build
+        run: npm run build
       - name: unit test
-        run: yarn run test:unit
+        run: npm run test:unit
       - name: e2e test
-        run: yarn run test:e2e
+        run: npm run test:e2e
       - name: lint code
         run: lint code
