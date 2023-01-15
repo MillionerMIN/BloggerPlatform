@@ -1,3 +1,9 @@
+import { Title } from '../../common/title/Title';
+
 export const Blogs = () => {
-  return <section>Blogs</section>;
+  return (
+    <section>
+      <Title titleValue='Blogs' />
+    </section>
+  );
 };
